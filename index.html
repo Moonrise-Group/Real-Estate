@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="pdfmake/build/pdfmake.min.js"></script>
+  <script src="pdfmake/build/vfs_fonts.js"></script>
+  <title>Contrato de Compra e Venda de Imóvel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="row">
+    <form>
+      <!-- Dados do Vendedor -->
+      <label for="nomeVendedor" class="nomecima"><b>Nome do Vendedor</b></label>
+      <input id="nomeVendedor" class="inputUser" placeholder="EX: João Silva" required />
+      <br />
+
+      <label for="nacionalidadeVendedor" class="nomecima"><b>Nacionalidade do Vendedor</b></label>
+      <input id="nacionalidadeVendedor" class="inputUser" placeholder="EX: Brasileiro" required />
+      <br />
+
+      <label for="estadoCivilVendedor" class="nomecima"><b>Estado Civil do Vendedor</b></label>
+      <input id="estadoCivilVendedor" class="inputUser" placeholder="EX: Solteiro" required />
+      <br />
+
+      <label for="trabalhoVendedor" class="nomecima"><b>Trabalho do Vendedor</b></label>
+      <input id="trabalhoVendedor" class="inputUser" placeholder="EX: Advogado" required />
+      <br />
+
+      <label for="cpfVendedor" class="nomecima"><b>CPF do Vendedor</b></label>
+      <input id="cpfVendedor" class="inputUser" placeholder="EX: 123.456.789-00" required />
+      <br />
+
+      <label for="enderecoVendedor" class="nomecima"><b>Endereço do Vendedor</b></label>
+      <input id="enderecoVendedor" class="inputUser" placeholder="EX: Rua ABC, Nº 456" required />
+      <br />
+
+      <label for="numeroVendedor" class="nomecima"><b>Número do Vendedor</b></label>
+      <input id="numeroVendedor" class="inputUser" placeholder="EX: 456" required />
+      <br />
+
+      <label for="bairroVendedor" class="nomecima"><b>Bairro do Vendedor</b></label>
+      <input id="bairroVendedor" class="inputUser" placeholder="EX: Centro" required />
+      <br />
+
+      <label for="cidadeVendedor" class="nomecima"><b>Cidade do Vendedor</b></label>
+      <input id="cidadeVendedor" class="inputUser" placeholder="EX: São Paulo" required />
+      <br />
+
+      <!-- Adicione os demais campos do vendedor aqui... -->
+
+      <!-- Dados do Comprador -->
+      <label for="nomeComprador" class="nomecima"><b>Nome do Comprador</b></label>
+      <input id="nomeComprador" class="inputUser" placeholder="EX: Maria Oliveira" required />
+      <br />
+
+      <label for="nacionalidadeComprador" class="nomecima"><b>Nacionalidade do Comprador</b></label>
+      <input id="nacionalidadeComprador" class="inputUser" placeholder="EX: Brasileira" required />
+      <br />
+
+      <label for="estadoCivilComprador" class="nomecima"><b>Estado Civil do Comprador</b></label>
+      <input id="estadoCivilComprador" class="inputUser" placeholder="EX: Casada" required />
+      <br />
+
+      <label for="trabalhoComprador" class="nomecima"><b>Trabalho do Comprador</b></label>
+      <input id="trabalhoComprador" class="inputUser" placeholder="EX: Médica" required />
+      <br />
+
+      <label for="cpfComprador" class="nomecima"><b>CPF do Comprador</b></label>
+      <input id="cpfComprador" class="inputUser" placeholder="EX: 987.654.321-00" required />
+      <br />
+
+      <label for="enderecoComprador" class="nomecima"><b>Endereço do Comprador</b></label>
+      <input id="enderecoComprador" class="inputUser" placeholder="EX: Av. XYZ, Nº 789" required />
+      <br />
+
+      <label for="numeroComprador" class="nomecima"><b>Número do Comprador</b></label>
+      <input id="numeroComprador" class="inputUser" placeholder="EX: 789" required />
+      <br />
+
+      <label for="bairroComprador" class="nomecima"><b>Bairro do Comprador</b></label>
+      <input id="bairroComprador" class="inputUser" placeholder="EX: Centro" required />
+      <br />
+
+      <label for="cidadeComprador" class="nomecima"><b>Cidade do Comprador</b></label>
+      <input id="cidadeComprador" class="inputUser" placeholder="EX: São Paulo" required />
+      <br />
+
+      <!-- Adicione os demais campos do comprador aqui... -->
+
+      <!-- Dados do Imóvel -->
+      <label for="tipoImovel" class="nomecima"><b>Tipo de Imóvel</b></label>
+      <input id="tipoImovel" class="inputUser" placeholder="EX: Apartamento" required />
+      <br />
+
+      <label for="areaTotalImovel" class="nomecima"><b>Área Total do Imóvel</b></label>
+      <input id="areaTotalImovel" class="inputUser" placeholder="EX: 100m²" required />
+      <br />
+
+      <label for="areaTotalImovelExtenso" class="nomecima"><b>Área Total do Imóvel Por Extenso</b></label>
+      <input id="areaTotalImovelExtenso" class="inputUser" placeholder="EX: 100,00" required />
+      <br />
+
+      <label for="valorImovel" class="nomecima"><b>Valor do Imóvel</b></label>
+      <input id="valorImovel" class="inputUser" placeholder="EX: 150000,00" required />
+      <br />
+
+      <label for="valorImovelExtenso" class="nomecima"><b>Valor do Imóvel por Extenso</b></label>
+      <input id="valorImovelExtenso" class="inputUser" placeholder="EX: Cento e Cinquenta Mil Reais" required />
+      <br />
+
+      <label for="enderecoImovel" class="nomecima"><b>Endereço do Imóvel</b></label>
+      <input id="enderecoImovel" class="inputUser" placeholder="EX: Rua XYZ, Nº 123, Bairro ABC" required />
+      <br />
+
+      <label for="cidadeImovel" class="nomecima"><b>Cidade do Imóvel</b></label>
+      <input id="cidadeImovel" class="inputUser" placeholder="EX: Seabra" required />
+      <br />
+
+      <label for="especificacoesImovel" class="nomecima"><b>Especificações do Imóvel</b></label>
+      <textarea id="especificacoesImovel" class="inputUser" placeholder="EX: 2 quartos, 1 banheiro"></textarea>
+      <br />
+
+      <label for="dataPagamentoImovel" class="nomecima"><b>Data de Pagamento do Imóvel</b></label>
+      <input id="dataPagamentoImovel" class="inputUser" placeholder="EX: 15 de fevereiro de 2024" required />
+      <br />
+
+      <label for="dataContrato" class="nomecima"><b>Data do Contrato</b></label>
+      <input id="dataContrato" class="inputUser" placeholder="EX: 15 de fevereiro de 2024" required />
+      <br />
+
+      <!-- Botão submit -->
+      <br /><br />
+      <input id="submit" type="button" class="BUTTON" value="Gerar Contrato" onclick="{createPDF()}" />
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
